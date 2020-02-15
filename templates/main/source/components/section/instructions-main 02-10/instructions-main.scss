@@ -29,6 +29,8 @@
 		position: relative;
 		overflow: hidden;
 		max-width: 572px;
+		flex-grow: 1;
+		width: 50%;
 
 		&:nth-child(odd) {
 			margin-right: 29px;
@@ -48,7 +50,11 @@
 
 	&__pic {
 		max-width: 572px;
-		width: 100%;
+		width: auto;
+
+
+		max-height: 100% !important;
+
 	}
 
 	// .instructions-main__list
@@ -56,7 +62,7 @@
 	&__list {
 		// height: 81px;
 		width: 100%;
-		background-color: #394791;
+		background-color: $base;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -77,22 +83,6 @@
 		// text-decoration: underline;
 
 	}
-	.special-offers {
-
-		// .special-offers__img
-
-		&__img {
-			width: auto;
-			height: auto;
-		}
-
-		// .special-offers__text
-
-		&__text {
-			// margin-bottom: auto;
-		}
-	}
-
 
 	@media screen and (max-width: 767px) {
 
@@ -112,6 +102,7 @@
 			min-width: 300px;
 			flex-grow: 0;
 			align-self: center;
+			padding-bottom: 100px;
 
 
 			&:nth-child(odd) {
