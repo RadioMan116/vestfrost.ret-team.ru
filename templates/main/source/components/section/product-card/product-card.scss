@@ -2710,14 +2710,14 @@
 		width: calc(75% - 6px);
 		position: relative;
 		padding-top: 6px;
-		padding-bottom: 42px;
+		padding-bottom: 24px;
 		border-bottom: 1px solid #eeeeee;
 		margin-bottom: 58px;
 
 		// .practical-features__title
 
 		&__title {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 26px;
 			font-weight: 400;
@@ -2737,22 +2737,31 @@
 
 		&__pic {
 			flex-shrink: 0;
-			max-width: 372px;
+			max-width: 48px;
 			display: flex;
-			flex-grow: 1;
+			// flex-grow: 1;
+			width: 48px;
+			margin-bottom: 16px;
+			margin-right: 24px;
 
 			align-items: baseline;
 
 			// justify-content: center;
-			img {}
+			img {
+				&[src*=svg] {
+					width: 100%;
+				}
+			}
 		}
 
 		// .practical-features__info
 
 		&__info {
-			margin-left: 28px;
+			margin-left: 0px;
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
 		}
 
 		// .practical-features__subtitle
@@ -2764,6 +2773,7 @@
 			font-weight: 400;
 			line-height: 24px;
 			margin-bottom: 16px;
+			width: calc(100% - 74px);
 		}
 
 		// .practical-features__text
@@ -2778,7 +2788,7 @@
 		// .practical-features__link
 
 		&__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -2786,7 +2796,7 @@
 			flex-grow: 1;
 			display: flex;
 			align-items: flex-start;
-			padding-bottom: 14px;
+			padding-bottom: 0px;
 			margin-top: 12px;
 		}
 
@@ -2836,6 +2846,7 @@
 			display: flex;
 		}
 	}
+
 
 	.diagram {
 		position: relative;
@@ -3161,9 +3172,10 @@
 			margin-left: 16px;
 		}
 	}
-.recently-watched {
-	margin-bottom: 56px;
-}
+
+	.recently-watched {
+		margin-bottom: 56px;
+	}
 
 
 
@@ -4199,7 +4211,7 @@
 
 			.swiper-pagination-practical-features {
 				top: unset;
-				bottom: 27px;
+				bottom: 4px;
 				right: unset;
 				left: 50%;
 				transform: translateX(-50%);
@@ -4210,7 +4222,7 @@
 			}
 
 			.practical-features__title {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 22px;
 				font-weight: 400;
@@ -4223,26 +4235,27 @@
 			}
 
 			.practical-features__pic {
-				width: 100%;
-				max-width: 100%;
-				max-height: 191px;
-				margin-bottom: 23px;
+				// width: 100%;
+				// max-width: 100%;
+				// max-height: 150px;
+				// margin-bottom: 23px;
 
 				// height: 100%;
-				img {
-					max-height: inherit;
-				}
+				// img {
+				// 	max-height: inherit;
+				// 	width: 150px;
+				// }
 			}
 
 			.practical-features__info {
 				margin-left: 0;
+				align-items: flex-start;
 			}
 
 			.practical-features__text {
 				margin-bottom: 18px;
 			}
 		}
-
 		.diagram {
 			padding: 0px;
 			height: auto;
