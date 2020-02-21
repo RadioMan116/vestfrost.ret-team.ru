@@ -508,8 +508,6 @@ $(document).ready(function () {
 
 	}
 
-
-
 	$(".js-header__search").click(function () {
 		if ($(".search__popup").hasClass("search__popup-open") == false) {
 			$(".header .search__popup").addClass("search__popup-open");
@@ -636,7 +634,82 @@ $(document).ready(function () {
 		}
 		$(".labels__popup").css('left', handel);
 	});
+	(function () {
+		let point = document.querySelectorAll('.gallery__point');
+		let buttonNext = document.querySelector('.gallery__next');
+		let buttonPrev = document.querySelector('.gallery__prev');
+		let firstAllParent = document.querySelectorAll('.new-gallery .swiper-slide');
+		let gallery = document.querySelector('.new-gallery');
+		let num = 0;
 
+		if (gallery) {
+			firstAllParent.forEach(point => {
+
+				let firstParent = point.querySelectorAll('.gallery__parent');
+				firstParent[0].classList.add('active');
+			})
+
+			point.forEach((el) => {
+
+				el.addEventListener('mouseover', function (e) {
+					e.stopPropagation();
+					// e.preventDefault();
+					point.forEach((element) => {
+
+						element.parentNode.classList.remove('active');
+					})
+
+					this.parentNode.classList.add('active');
+
+				}, true);
+
+			})
+
+
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+			function plusSlide() {
+				showSlides(slideIndex += 1);
+			}
+
+			/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+			function minusSlide() {
+				showSlides(slideIndex -= 1);
+			}
+
+			/* Устанавливает текущий слайд */
+			// function currentSlide(n) {
+			// 	showSlides(slideIndex = n);
+			// }
+
+			/* Основная функция слайдера */
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("gallery__parent");
+				// var dots = document.getElementsByClassName("slider-dots_item");
+				if (n > slides.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].classList.remove('active');
+				}
+				// for (i = 0; i < dots.length; i++) {
+				//     dots[i].className = dots[i].className.replace(" active", "");
+				// }
+				slides[slideIndex - 1].classList.add('active');
+				// dots[slideIndex - 1].className += " active";
+			}
+			buttonNext.addEventListener('click', plusSlide)
+			buttonPrev.addEventListener('click', minusSlide)
+		}
+
+
+	})()
 	$(".catalog__prop .js-link-pop-glossary").hover(function () {
 
 		var text = $(this).find('.popup-prop__text').text();
