@@ -291,7 +291,9 @@
 	}
 
 	&__pic {
-		width: 100%;
+		// width: 100%;
+		width: calc(100% - 32px);
+		align-self: center;
 		display: flex;
 		height: 250px;
 		// flex-shrink: 0;
