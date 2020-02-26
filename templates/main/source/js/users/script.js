@@ -1026,6 +1026,15 @@ $(document).ready(function () {
 			}
 		})();
 
+		(function () {
+			let productCard = document.querySelector('.product-card');
+			if (productCard) {
+				let favorite = productCard.querySelector('.product-card__social');
+				let productHeaderBottom = productCard.querySelector('.product__header_bottom');
+				productHeaderBottom.append(favorite);
+			}
+		})();
+
 	}
 	$(".js-comparison__select").click(function () {
 		if ($(this).hasClass("active") == true) {
@@ -2078,31 +2087,31 @@ $(window).on('load', function () {
 		});
 	}, 100);
 
-		var mySwiper15 = new Swiper(".js-sidebar-articles", {
-			navigation: {
-				nextEl: ".articles__next",
-				prevEl: ".articles__prev"
+	var mySwiper15 = new Swiper(".js-sidebar-articles", {
+		navigation: {
+			nextEl: ".articles__next",
+			prevEl: ".articles__prev"
+		},
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 12,
+		pagination: {
+			el: ".articles__pagination",
+			clickable: true
+		},
+		breakpoints: {
+			600: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 12,
 			},
-			slidesPerView: 1,
-			slidesPerGroup: 1,
-			spaceBetween: 12,
-			pagination: {
-				el: ".articles__pagination",
-				clickable: true
+			767: {
+				slidesPerView: 2,
+				slidesPerGroup: 1,
+				spaceBetween: 12,
 			},
-			breakpoints: {
-				600: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-				},
-				767: {
-					slidesPerView: 2,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-				},
-			}
-		});
+		}
+	});
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
 		setTimeout(function () {
 			console.log('inputmask')
