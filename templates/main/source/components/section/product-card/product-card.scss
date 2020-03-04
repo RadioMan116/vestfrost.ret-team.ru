@@ -5020,6 +5020,11 @@
 
 			.swiper-slide {
 				flex-direction: column;
+
+				&:not(.swiper-slide-active) {
+					max-height: 0;
+					opacity: 0;
+				}
 			}
 
 			.practical-features__pic {
