@@ -3050,7 +3050,7 @@
 					width: 50%;
 					flex-direction: column;
 					margin-bottom: 0;
-					padding: 8px 25px 25px 11px;
+					padding: 14px;
 					min-width: unset;
 
 					&:nth-child(3n-1) {
@@ -3085,6 +3085,7 @@
 					.catalog__price {
 						width: 100%;
 						height: auto;
+						margin-bottom: 14px;
 					}
 
 					.catalog__sale {
@@ -3138,6 +3139,12 @@
 							background-size: 18px;
 							margin: 0;
 						}
+					}
+
+					.special-offers__sale {
+						align-items: center;
+						margin-bottom: 0;
+
 					}
 				}
 
