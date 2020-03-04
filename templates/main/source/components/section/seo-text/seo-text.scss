@@ -157,13 +157,13 @@
 
 		&:nth-of-type(2) {
 			.container {
-				p~p {
-					// display: none;
-					height: 0;
-					width: 0;
-					// color: transparent;
-					opacity: 0;
-				}
+				// p~p {
+				// 	// display: none;
+				// 	height: 0;
+				// 	width: 0;
+				// 	// color: transparent;
+				// 	opacity: 0;
+				// }
 			}
 
 			// margin-bottom: 0px;
@@ -174,13 +174,13 @@
 			margin-bottom: 17px;
 
 			.container {
-				* {
-					// display: none;
-					height: 0;
-					width: 0;
-					// color: transparent;
-					opacity: 0;
-				}
+				// * {
+				// 	// display: none;
+				// 	height: 0;
+				// 	width: 0;
+				// 	// color: transparent;
+				// 	opacity: 0;
+				// }
 			}
 
 		}
