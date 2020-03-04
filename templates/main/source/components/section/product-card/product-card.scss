@@ -872,9 +872,7 @@
 				}
 			}
 
-			+p+p+ul {
-				margin-top: -22px;
-			}
+
 
 		}
 
@@ -2633,6 +2631,10 @@
 			padding: 6px 0 20px;
 			text-align: left;
 			margin-bottom: 0;
+		}
+
+		p+p+p+ul {
+			margin-top: -22px;
 		}
 	}
 
