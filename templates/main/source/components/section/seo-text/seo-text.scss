@@ -292,7 +292,7 @@
 		.container {
 			img {
 				margin: 0 -16px 14px;
-				max-width: calc(100% + 32px);
+				max-width: calc(100% + 32px) !important;
 			}
 		}
 	}
