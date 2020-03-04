@@ -2631,6 +2631,10 @@
 		}
 	}
 
+	[id^="bx_incl_area"] {
+		width: 100%;
+	}
+
 	.practical-features {
 		width: calc(75% - 6px);
 		position: relative;
