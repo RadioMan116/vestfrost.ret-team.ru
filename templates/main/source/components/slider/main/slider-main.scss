@@ -485,8 +485,8 @@
 
 			img {
 
-				max-width: unset;
-				height: 235px;
+				max-width: unset !important;
+				height: 235px !important;
 				display: block;
 				position: absolute;
 				top: 0;
