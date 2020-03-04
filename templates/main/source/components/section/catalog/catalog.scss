@@ -3104,8 +3104,8 @@
 					}
 
 					.catalog__pic {
-						width: auto;
-						height: 160px;
+						width: calc(100% - 30px);
+						height: 130px;
 					}
 
 					.announcing {
@@ -3140,6 +3140,8 @@
 						}
 					}
 				}
+
+				.catalog__pic {}
 			}
 
 		}

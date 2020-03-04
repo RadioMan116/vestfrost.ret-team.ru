@@ -5020,6 +5020,7 @@
 
 			.swiper-slide {
 				flex-direction: column;
+				transition: 0.3s;
 
 				&:not(.swiper-slide-active) {
 					max-height: 0;
