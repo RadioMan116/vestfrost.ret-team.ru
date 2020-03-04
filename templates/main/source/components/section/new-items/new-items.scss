@@ -102,6 +102,10 @@
 		text-decoration: none !important;
 	}
 
+	[data-list="Main Result"] & {
+		margin-bottom: 0;
+		padding-bottom: 0px;
+	}
 
 
 	@media screen and (max-width: 767px) {
