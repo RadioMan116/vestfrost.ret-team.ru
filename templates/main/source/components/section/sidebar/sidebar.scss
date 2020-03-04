@@ -522,6 +522,7 @@
 	background-color: #ffffff;
 	border: solid 1px #eeeeee;
 	list-style: none;
+	display: none !important;
 
 	&__item {
 		width: 100%;
@@ -845,7 +846,7 @@
 
 		i {
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			text-transform: uppercase;
 			font-style: normal;
