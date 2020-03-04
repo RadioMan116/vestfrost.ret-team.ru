@@ -1005,11 +1005,13 @@ $(document).ready(function () {
 		}
 		(function () {
 			var firstDropdownMenu = document.querySelector('nav.dropdown-menu');
+			var firstFooterDropdownMenu = document.querySelector('.footer__col .menu-footer');
 			$(".header__block_top .menu").appendTo('#js-header__block_bottom .container');
 			$('.js-city-change').appendTo('#js-header__block_bottom .menu');
 			$('#js-menu .header__telephones').appendTo('#js-header__block_bottom .menu');
 
 			firstDropdownMenu.classList.add("active");
+			firstFooterDropdownMenu.classList.add("active");
 		})();
 		(function () {
 			let catalogList = document.querySelector(".catalog__list");

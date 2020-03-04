@@ -4527,6 +4527,10 @@
 			.characteristic__copyright {
 				display: none;
 			}
+
+			.description {
+				width: calc(75% - 12px);
+			}
 		}
 
 		.special-offers__title {
@@ -4984,6 +4988,14 @@
 
 			p {
 				margin-bottom: 22px;
+
+				br {
+					display: none;
+				}
+			}
+
+			ul {
+				margin-top: -16px;
 			}
 		}
 
