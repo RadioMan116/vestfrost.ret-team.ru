@@ -77,7 +77,7 @@
 
 		td {
 			color: #2e2e2e;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 500;
 			// line-height: 30px;
@@ -170,7 +170,8 @@
 		list-style: none;
 		padding: 0;
 		// height: 30px;
-		max-height: 50px;
+		// max-height: 50px;
+		position: relative;
 		margin: 16px 0 0;
 		// background: white;
 		border-radius: 2px;
@@ -179,6 +180,7 @@
 		border: solid 1px #d6d6d6;
 		border-bottom: 0;
 		background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
+		max-height: 26px;
 
 		&:hover {
 			overflow: unset;
@@ -208,7 +210,7 @@
 		background: white;
 		z-index: 99;
 		display: flex;
-		flex: 1 0 100%;
+		flex: 1 0 auto;
 		margin: 0 -1px;
 		display: none;
 
@@ -229,13 +231,15 @@
 		// &:hover{
 		// 	background-color: hsla(0,0%,93%,.29);
 		// }
-
+		// &:not(.order) {
+		// 	position: absolute;
+		// }
 	}
 
 	&__link {
 		padding: 0px 14px;
 		color: #2e2e2e;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 25px;
 		position: relative;
@@ -292,7 +296,7 @@
 
 	.open-all {
 		color: #394791;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: auto;
@@ -555,7 +559,7 @@
 					// background: rebeccapurple;
 					background-color: #f8f8f8;
 					width: 1000%;
-					height: 106%;
+					height: calc(100% + 16px);
 					z-index: -1;
 					top: -11px;
 					left: -300%;
@@ -579,7 +583,7 @@
 			&.characteristic__row {
 				td {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 700;
 					// line-height: 30px;
@@ -748,7 +752,7 @@
 					bottom: 75px;
 					left: 0px;
 					color: #d6d6d6;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 				}
 
@@ -818,7 +822,7 @@
 				width: 100%;
 				padding: 0 12px;
 				color: #394791;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 1;
 			}
@@ -838,7 +842,7 @@
 				top: -15px;
 				left: 243px;
 				color: #d6d6d6;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 			}
 
@@ -966,12 +970,16 @@
 			width: 80px;
 			margin-right: 20px;
 			display: flex;
+
+			img {
+				object-fit: contain;
+			}
 		}
 
 		&__text {
 			line-height: 1;
 			color: #394791;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 		}
@@ -1033,7 +1041,7 @@
 
 			.fixed-header__text {
 				color: #394791;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 			}
@@ -1102,7 +1110,7 @@
 					td {
 						padding: 0 0 0px 0 !important;
 						border: 0 !important;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 14px;
 						font-weight: 700;
 						line-height: 20px;
@@ -1219,7 +1227,7 @@
 					border: 1px solid #d6d6d6;
 					background-color: #ffffff;
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					text-align: left;
 					justify-content: flex-start;
@@ -1261,7 +1269,7 @@
 				.diagram__name {
 					text-align: center;
 					color: #394791;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					line-height: 20px;
 					padding: 0 6px;
@@ -1514,7 +1522,7 @@
 			padding-left: 30px;
 			background-position: 5px 0;
 			color: #394791;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 
