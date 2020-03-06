@@ -137,7 +137,7 @@
 	}
 
 	&__description {
-		display: none;
+		// display: none;
 		position: absolute;
 		width: 372px;
 		// left: 40px;
@@ -163,6 +163,7 @@
 		// justify-content: center;
 		padding-top: 0px;
 		z-index: -1;
+		transition: 0s;
 
 		img {
 			margin-bottom: 24px;
@@ -407,6 +408,7 @@
 	flex-direction: column;
 	position: relative;
 	max-height: 604px;
+	margin-bottom: 24px;
 
 	.new-gallery__title {
 		color: #333333;
@@ -433,7 +435,7 @@
 		// margin-left: 24px;
 
 		.gallery__description {
-			display: none;
+			opacity: 0;
 		}
 
 		&.active {
@@ -444,7 +446,7 @@
 				display: flex;
 				z-index: 1;
 				position: unset;
-				display: block;
+				opacity: 1;
 				// width: calc(100% - 471px);
 
 			}
