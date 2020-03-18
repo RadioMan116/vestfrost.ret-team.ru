@@ -2173,9 +2173,11 @@ $(window).on('load', function () {
 					$('.comparison__list .comparison__item:eq(0)').addClass('order');
 				}
 			})
+
 			// if (select.hasClass('active')) {
 			// 	console.log('1')
 			// }
+			$('.comparison__list').height($('.comparison__item.order').innerHeight());
 		}
 
 		if (windowWidth2 > 767) {
