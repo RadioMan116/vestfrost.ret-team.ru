@@ -40,6 +40,10 @@
 			-webkit-transform: scale(1.1);
 			transform: scale(1.1);
 		}
+
+		&:nth-child(-n + 6) {
+			margin-bottom: 0;
+		}
 	}
 
 	// .instructions-main__image
