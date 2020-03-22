@@ -884,7 +884,7 @@ $(document).ready(function () {
 		};
 		$('.instructions-main__list').matchHeight();
 		$('.catalog__specification').matchHeight();
-		$('.catalog__prop').matchHeight();
+		// $('.catalog__prop').matchHeight();
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
