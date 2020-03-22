@@ -9,7 +9,7 @@
 
 	img {
 		width: auto;
-		height: 100%;
+		height: 100% !important;
 
 	}
 
@@ -275,6 +275,10 @@
 				@media only screen and (max-width: 1024px) {
 					transform: translateX(-10%);
 				}
+			}
+
+			picture {
+				height: 100%;
 			}
 		}
 
