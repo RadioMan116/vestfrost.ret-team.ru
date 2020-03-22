@@ -23,7 +23,8 @@
 		color: #333333;
 	}
 
-	.catalog__sale {
+	.catalog__sale,
+	&__sale {
 		margin-top: unset !important;
 		margin-bottom: 8px;
 		padding-right: 3px;
