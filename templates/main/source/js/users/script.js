@@ -1315,6 +1315,11 @@ $(document).ready(function () {
 			$('.js-comparison__link').click(function (e) {
 				e.preventDefault();
 			});
+			let comparisonItem = document.querySelectorAll('.comparison__item');
+			let comparisonList = document.querySelector('.comparison__list');
+			if (comparisonItem.length > 1) {
+				comparisonList.classList.add('triangle')
+			}
 			$('.comparison__item').click(function () {
 				$('.comparison__item').removeClass('order')
 				$(this).addClass('order')
@@ -2183,11 +2188,6 @@ $(window).on('load', function () {
 			// 	console.log('1')
 			// }
 			$('.comparison__list').height($('.comparison__item.order').innerHeight());
-			let comparisonItem = document.querySelectorAll('.comparison__item');
-			let comparisonList = document.querySelector('.comparison__list');
-			if (comparisonItem.length < 2) {
-				comparisonList.style.background = "white";
-			}
 		}
 		if (windowWidth2 > 767) {
 			console.log($(".products-line").outerHeight(true))
