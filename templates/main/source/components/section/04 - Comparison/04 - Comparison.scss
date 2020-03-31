@@ -239,6 +239,18 @@
 			border-top: 0;
 			border-bottom: 0;
 			display: flex;
+
+			.comparison__link {
+				pointer-events: none;
+				display: block;
+			}
+		}
+
+		&:only-child {
+			.comparison__link {
+				pointer-events: none;
+				display: block;
+			}
 		}
 
 		// &:hover{
@@ -257,8 +269,7 @@
 		display: none;
 		text-decoration: none !important;
 
-		&.active,
-		&:only-child {
+		&.active {
 			pointer-events: none;
 			display: block;
 		}
