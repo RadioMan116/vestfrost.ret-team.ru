@@ -149,7 +149,8 @@ $(document).ready(function () {
 		slidesPerGroup: 1,
 		spaceBetween: 0,
 		lazy: true,
-		effect: "fade"
+		effect: "fade",
+		autoHeight: true,
 	});
 	var mySwiper10 = new Swiper(".js-download-catalogs", {
 		// Optional parameters
@@ -2203,7 +2204,7 @@ $(window).on('load', function () {
 				'margin-bottom': ($(".products-line").innerHeight() + 'px')
 			});
 			$(".js-swiper-comparison").css({
-				'margin-top': ($(".thead__comparison").height() - 10 + 'px')
+				'margin-top': ($(".thead__comparison").height() + 'px')
 			});
 			$(".comparison .js-swiper-pagination").css({
 				'top': ($(".thead__comparison").height() + 29 + 'px')

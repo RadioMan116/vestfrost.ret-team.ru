@@ -708,7 +708,7 @@
 			// width: 50% !important;
 
 			&:first-child {
-				width: 120px !important;
+				width: 170px !important;
 				padding-left: 0;
 			}
 
@@ -758,6 +758,19 @@
 					}
 				}
 			}
+		}
+
+		table {
+			width: 100%;
+			display: block;
+			overflow-y: auto;
+
+			// &__delivery,
+			// &__cost {
+			// 	width: 100%;
+			// 	display: block;
+			// 	overflow-y: auto;
+			// }
 		}
 
 		blockquote {
