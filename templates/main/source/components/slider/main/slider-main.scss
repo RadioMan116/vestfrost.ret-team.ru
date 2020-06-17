@@ -710,6 +710,7 @@
 			display: flex;
 			flex-shrink: 0;
 			padding-left: 0;
+			height: 0;
 
 			.gallery__description {
 				display: flex;
@@ -720,6 +721,7 @@
 				display: flex;
 				position: static !important;
 				order: -1;
+				height: auto;
 			}
 
 			.gallery__description {
