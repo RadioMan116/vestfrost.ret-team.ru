@@ -150,7 +150,6 @@ $(document).ready(function () {
 		spaceBetween: 0,
 		lazy: true,
 		effect: "fade",
-		autoHeight: true,
 	});
 	var mySwiper10 = new Swiper(".js-download-catalogs", {
 		// Optional parameters
