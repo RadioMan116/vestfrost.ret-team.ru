@@ -70,7 +70,62 @@
 		margin-bottom: 5px;
 		margin-top: 0px;
 
-		.link-pop-glossary {}
+		.link-pop-glossary {
+			position: relative;
+
+			.popup-prop {
+				display: none;
+				width: 274px;
+				box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
+				border-radius: 3px;
+				background-color: #ffffff;
+				padding: 22px 24px 26px;
+				z-index: 100;
+				bottom: 100%;
+				height: auto;
+				opacity: 1;
+				max-height: unset;
+				max-width: unset;
+				position: absolute;
+			}
+
+			.popup-prop__img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 10px;
+			}
+
+			.popup-prop__title {
+				color: #333333;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				font-weight: 700;
+				margin-bottom: 4px;
+			}
+
+			.popup-prop__text {
+				color: #333333;
+				font-family: Arial, sans-serif;
+				font-size: 12px;
+				line-height: 18px;
+				margin-bottom: 5px;
+
+				&.active {
+					height: 180px;
+					overflow: hidden;
+				}
+			}
+
+			.popup-prop__link {
+				color: $base;
+				font-family: "Roboto Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 20px;
+
+
+			}
+		}
 
 		.icons-prop-item {
 			width: 38.94px;
@@ -3175,6 +3230,19 @@
 			}
 
 		}
+
+		.catalog__prop {
+			position: relative;
+
+			.link-pop-glossary {
+				position: static;
+
+			.popup-prop {
+				left: 0 !important;
+			}
+		}
+		}
+
 
 	}
 

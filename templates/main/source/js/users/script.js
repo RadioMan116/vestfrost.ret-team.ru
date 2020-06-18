@@ -701,6 +701,7 @@ $(document).ready(function () {
 
 
 	})()
+	$(" .catalog__prop .link-pop-glossary").addClass("js-link-pop-glossary");
 	$(".catalog__prop .js-link-pop-glossary").hover(function () {
 
 		var text = $(this).find('.popup-prop__text').text();
