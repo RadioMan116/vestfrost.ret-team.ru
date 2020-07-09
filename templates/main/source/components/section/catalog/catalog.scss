@@ -49,7 +49,7 @@
 	.seach-found {}
 
 	.catalog__text {
-		padding: 15px 0 2px !important;
+		padding: 0 0 2px !important;
 		min-height: 95px;
 		flex-shrink: 0;
 		color: #333333;
@@ -57,6 +57,24 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
+		display: flex;
+		flex-direction: column;
+
+		&:hover {
+
+
+			text-decoration: none;
+
+		}
+
+		span {
+			color: #b0b0b0;
+			font-family: "Roboto Condensed";
+			font-size: 14px;
+			font-weight: 400;
+
+
+		}
 	}
 
 	&__prop {
@@ -67,7 +85,7 @@
 		flex-grow: 99;
 		flex-wrap: wrap;
 
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 		margin-top: 0px;
 
 		.link-pop-glossary {
@@ -132,6 +150,15 @@
 			height: 39px;
 			padding: 0 4px 4px 0;
 		}
+	}
+
+	&__desc {
+		color: #262626;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 16px;
+		margin-bottom: 10px;
 	}
 
 	.sorting__info {
@@ -344,6 +371,50 @@
 
 		&:nth-of-type(3n-1) {
 			margin: 0 26px 24px;
+		}
+	}
+
+	&__ratings {
+		display: flex;
+		justify-content: flex-end;
+		// margin-top: 22px;
+		position: absolute;
+		top: 283px;
+		right: 19px;
+
+		.ratings {
+			display: flex;
+			align-items: center;
+
+			&__star {
+				width: 16px;
+				height: 16px;
+				background: url("../images/star.svg") no-repeat;
+				background-position: 50%;
+				background-size: 16px;
+			}
+
+			&__number {
+				color: #333333;
+				font-family: Arial;
+				font-size: 12px;
+				font-weight: 700;
+				margin: 0 4px;
+			}
+
+			&__none {
+				background: url("../images/rectangle-2.svg") no-repeat;
+				background-position: 50%;
+				background-size: 16px;
+			}
+
+			&__all {
+				font-size: 12px;
+				color: #394791;
+				font-family: Arial;
+				font-size: 14px;
+				font-weight: 400;
+			}
 		}
 	}
 
@@ -575,11 +646,17 @@
 
 		&__item {
 			a {
-				color: #394791 !important;
+				color: #394791;
 				cursor: pointer;
 
 				&:hover {
 					// border-bottom: 1px dashed transparent;
+				}
+			}
+
+			&.red {
+				a {
+					color: #d82300;
 				}
 			}
 
@@ -2046,8 +2123,13 @@
 				display: flex;
 				flex-direction: column;
 
-				&:first-of-type {
-					width: 234px;
+				width: 234px;
+
+				.catalog__text {
+					width: auto;
+					flex-shrink: 1;
+					display: flex;
+					flex-direction: column;
 				}
 
 				&:last-of-type {
@@ -2055,6 +2137,27 @@
 					flex-grow: 1;
 					padding-left: 61px;
 				}
+			}
+
+			.catalog__ratings {
+				display: flex;
+				justify-content: flex-start;
+				margin: 0 0 16px;
+				position: unset;
+
+				.ratings {
+					&__number {
+						margin: 0 17px 0 8px;
+						font-size: 14px;
+					}
+				}
+			}
+
+			&-title {
+				display: flex;
+				width: 100%;
+
+
 			}
 		}
 
@@ -2080,6 +2183,12 @@
 
 		.catalog__simile {
 			margin-right: unset;
+		}
+
+		.catalog__desc {
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 16px;
 		}
 
 		.catalog__sale,
@@ -2262,8 +2371,14 @@
 				min-height: unset;
 				padding: 0 !important;
 				line-height: 25px;
-				margin-bottom: 28px;
-				margin-top: 35px;
+				margin-bottom: 5px;
+				margin-top: 24px;
+
+				span {
+					color: #b0b0b0;
+					font-family: "Roboto Condensed";
+					font-size: 14px;
+				}
 			}
 
 			&__specification {
@@ -2326,9 +2441,13 @@
 					display: flex;
 					justify-content: center;
 				}
+
+
 			}
 
-
+			.catalog__ratings {
+				top: 288px;
+			}
 		}
 
 		.load-more {
@@ -3198,10 +3317,66 @@
 						}
 					}
 
+					.catalog__ratings {
+						margin-bottom: 0;
+						position: absolute;
+						top: 142px;
+						right: 19px;
+
+						.ratings {
+
+							&__star:not(:first-child) {
+								display: none;
+							}
+
+							&__star {
+								width: 12px;
+								height: 12px;
+								background-size: 12px;
+							}
+
+							&__number {
+								margin: 0 4px;
+								font-size: 10px;
+							}
+
+							&__all {
+								font-size: 10px;
+
+								&:before {
+									content: '('
+								}
+
+								&:after {
+									content: ')';
+									margin-left: -3px;
+								}
+
+								span {
+									display: none;
+								}
+							}
+						}
+					}
+
+					.catalog__desc {
+						font-size: 12px;
+						margin: 12px 0 0;
+						display: none;
+					}
+
 					.catalog__text {
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 20px;
+						margin-top: 0;
+
+						span {
+							color: #b0b0b0;
+							font-family: "Roboto Condensed";
+							font-size: 10px;
+							font-weight: 400;
+						}
 					}
 
 					.special-offers__buy {
@@ -3237,10 +3412,10 @@
 			.link-pop-glossary {
 				position: static;
 
-			.popup-prop {
-				left: 0 !important;
+				.popup-prop {
+					left: 0 !important;
+				}
 			}
-		}
 		}
 
 
