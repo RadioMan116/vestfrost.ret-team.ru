@@ -527,12 +527,14 @@
 		margin-left: 16px;
 		margin-right: auto;
 		background-size: 20px;
+		transition: none;
 
 		&.active {
 			background: url("../images/compare-ya-active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
 			background-size: 20px;
+			transition: none;
 		}
 	}
 
@@ -542,6 +544,7 @@
 		background-size: contain;
 		order: -1;
 		background-size: 20px;
+		transition: none;
 
 
 		&.active {
@@ -549,6 +552,7 @@
 			background-position: top center;
 			background-size: contain;
 			background-size: 20px;
+			transition: none;
 		}
 
 		width: 20px;
