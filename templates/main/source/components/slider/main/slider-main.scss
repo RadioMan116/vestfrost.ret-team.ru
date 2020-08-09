@@ -487,6 +487,10 @@
 		margin-bottom: 28px;
 		max-width: 100%;
 
+		.swiper-container-main {
+			height: 440px;
+		}
+
 		.swiper-slide {
 			flex-direction: column;
 			align-content: baseline;
@@ -503,7 +507,7 @@
 			img {
 
 				max-width: unset !important;
-				height: 235px !important;
+				height: 220px !important;
 				display: block;
 				position: absolute;
 				top: 0;
@@ -522,7 +526,8 @@
 			align-items: center;
 			flex-direction: column;
 			display: flex;
-			padding-top: 225px;
+			// padding-top: 225px;
+			height: 220px;
 			justify-content: center;
 
 			.gallery__parent {
