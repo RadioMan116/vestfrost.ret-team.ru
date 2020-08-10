@@ -487,9 +487,9 @@
 		margin-bottom: 28px;
 		max-width: 100%;
 
-		.swiper-container-main {
-			height: 440px;
-		}
+		// .swiper-container-main {
+		// 	height: 440px;
+		// }
 
 		.swiper-slide {
 			flex-direction: column;
@@ -515,6 +515,10 @@
 				right: -144px;
 			}
 
+			picture {
+				height: unset;
+			}
+
 		}
 
 		.swiper__item {
@@ -527,7 +531,7 @@
 			flex-direction: column;
 			display: flex;
 			// padding-top: 225px;
-			height: 220px;
+			padding-top: 220px;
 			justify-content: center;
 
 			.gallery__parent {
