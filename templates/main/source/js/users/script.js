@@ -790,7 +790,8 @@ $(document).ready(function() {
 		$('.articles__text').matchHeight();
 		// $('.catalog__prop').matchHeight();
 		(() => {
-			if ($('.catalog .js-recently-watched').length) {
+			let check = document.querySelector('.catalog .js-recently-watched')
+			if (check) {
 				$('.col-md-3 .sidebar').css('padding-bottom', '400px')
 			}
 		})();
