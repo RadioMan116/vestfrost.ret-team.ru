@@ -74,12 +74,13 @@
 	&__prop {
 		display: flex;
 		align-items: flex-start;
-		align-content: baseline;
 		padding: 0px;
-		flex-grow: 99;
+		flex-grow: 1;
 		flex-wrap: wrap;
-		margin-bottom: 8px;
-		margin-top: 0px;
+		position: relative;
+		margin: 0 -2px;
+		margin-bottom: 5px;
+		margin-top: auto;
 
 		.link-pop-glossary {
 			position: relative;
@@ -140,7 +141,7 @@
 		.icons-prop-item {
 			width: 38.94px;
 			height: 39px;
-			padding: 0 4px 4px 0;
+			padding: 0 2px 4px 0;
 		}
 	}
 
