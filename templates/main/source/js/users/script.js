@@ -1802,6 +1802,8 @@ $(document).ready(function() {
 			$('.link-pop-glossary').each(function(i, el) {
 				if ($(el).is('[aria-expanded]')) {
 					console.log("1")
+				} else {
+					console.log("2")
 					tippy(el, {
 						arrow: true,
 						placement: 'top', // top, right, bottom, left
@@ -1817,8 +1819,6 @@ $(document).ready(function() {
 						// ignoreAttributes: true,
 						content: document.querySelector('.popup-prop').cloneNode(true)
 					});
-				} else {
-					console.log("1")
 				}
 			})
 		});
