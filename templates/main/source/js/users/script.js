@@ -1817,6 +1817,8 @@ $(document).ready(function() {
 						// ignoreAttributes: true,
 						content: document.querySelector('.popup-prop').cloneNode(true)
 					});
+				} else {
+					console.log("1")
 				}
 			})
 		});
