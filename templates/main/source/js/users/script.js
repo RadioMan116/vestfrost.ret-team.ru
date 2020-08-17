@@ -1780,7 +1780,7 @@ $(document).ready(function() {
 			})
 		}
 	})();
-	$('.link-pop-glossary').each(function() {
+	$('.link-pop-glossary').each(function(i, el) {
 		tippy(this, {
 			arrow: true,
 			placement: 'top', // top, right, bottom, left
@@ -1800,7 +1800,7 @@ $(document).ready(function() {
 	$('.load-more').click(function() {
 		$(document).ajaxSuccess(function() {
 			$('.link-pop-glossary').each(function(i, el) {
-				if ($(el).hasAttr('aria-expanded')) {
+				if ($(el).is('[aria-expanded]')) {
 					console.log("1")
 					tippy(el, {
 						arrow: true,
