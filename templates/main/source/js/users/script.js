@@ -1801,7 +1801,6 @@ $(document).ready(function() {
 		$(document).ajaxSuccess(function() {
 			$('.link-pop-glossary').each(function(i, el) {
 				if (!$(el).is('[aria-expanded]')) {
-					console.log('2')
 					tippy(el, {
 						arrow: true,
 						placement: 'top', // top, right, bottom, left
