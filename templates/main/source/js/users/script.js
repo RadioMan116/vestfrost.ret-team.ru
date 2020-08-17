@@ -1800,7 +1800,7 @@ $(document).ready(function() {
 	$('.load-more').click(function() {
 		$(document).ajaxSuccess(function() {
 			$('.link-pop-glossary').each(function(i, el) {
-				if ($(el).find('.popup-prop').length > 0) {
+				if (!$(el).hasAttr('aria-expanded')) {
 					console.log("1")
 					tippy(el, {
 						arrow: true,
