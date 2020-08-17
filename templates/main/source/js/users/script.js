@@ -1791,6 +1791,7 @@ $(document).ready(function() {
 			// leave these as they are
 			// followCursor: true,
 			allowHTML: true,
+			hideOnClick: true,
 			theme: 'light',
 			appendTo: () => document.body,
 			// ignoreAttributes: true,
@@ -1811,6 +1812,7 @@ $(document).ready(function() {
 						// leave these as they are
 						// followCursor: true,
 						allowHTML: true,
+						hideOnClick: true,
 						theme: 'light',
 						appendTo: () => document.body,
 						// ignoreAttributes: true,
