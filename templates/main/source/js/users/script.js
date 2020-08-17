@@ -1800,10 +1800,8 @@ $(document).ready(function() {
 	$('.load-more').click(function() {
 		$(document).ajaxSuccess(function() {
 			$('.link-pop-glossary').each(function(i, el) {
-				if ($(el).is('[aria-expanded]')) {
-					console.log("1")
-				} else {
-					console.log("2")
+				if (!$(el).is('[aria-expanded]')) {
+					console.log('2')
 					tippy(el, {
 						arrow: true,
 						placement: 'top', // top, right, bottom, left
