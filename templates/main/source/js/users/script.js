@@ -1781,7 +1781,7 @@ $(document).ready(function() {
 		}
 	})();
 	$('.link-pop-glossary').each(function(i, el) {
-		tippy(this, {
+		tippy(el, {
 			arrow: true,
 			placement: 'top', // top, right, bottom, left
 			// trigger: 'click',
@@ -1795,7 +1795,7 @@ $(document).ready(function() {
 			theme: 'light',
 			appendTo: () => document.body,
 			// ignoreAttributes: true,
-			content: document.querySelector('.popup-prop').cloneNode(true)
+			content: el.querySelector('.popup-prop')
 		});
 	});
 	$('.load-more').click(function() {
@@ -1816,7 +1816,7 @@ $(document).ready(function() {
 						theme: 'light',
 						appendTo: () => document.body,
 						// ignoreAttributes: true,
-						content: document.querySelector('.popup-prop').cloneNode(true)
+						content: el.querySelector('.popup-prop')
 					});
 				}
 			})
