@@ -2006,7 +2006,7 @@
 			.catalog__item {
 				max-width: 100%;
 				width: 100%;
-				flex-basis: 100%;
+				flex-basis: auto;
 				flex-direction: row;
 				flex-wrap: wrap;
 
@@ -2029,6 +2029,11 @@
 			img {
 				max-height: 100%;
 			}
+		}
+
+		.link-pop-glossary {
+			position: relative;
+			width: calc(100%/8);
 		}
 
 		.catalog__inner {
